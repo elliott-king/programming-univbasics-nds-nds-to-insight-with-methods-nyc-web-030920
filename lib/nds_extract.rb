@@ -6,7 +6,7 @@ require 'directors_database'
 def gross_for_director(director_data)
   sum = 0
   director_data[:movies].each do |movie|
-    sum += movie[:worldwide_grosses]
+    sum += movie[:worldwide_gross]
   end
   return sum
 end
